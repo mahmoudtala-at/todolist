@@ -1,0 +1,59 @@
+body {
+    background-color: #3e3f77;
+    color: #fff;
+}
+
+.today {
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.clipboard {
+    font-size: 6rem;
+}
+
+.fa-trash {
+    cursor: pointer;
+}
+
+@media (max-width: 1416px) and (min-width: 1024px) {
+    body {
+        font-size: .75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    .clipboard {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 764px) {
+    body {
+        font-size: .5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    .clipboard {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 763px) {
+    body {
+        font-size: .4rem;
+    }
+
+    h2 {
+        font-size: .75rem;
+    }
+    .clipboard {
+        font-size: 2rem;
+    }
+}

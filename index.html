@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="theme-color" content="#ee5b3e" />
+    <link rel="icon" href="./preview.png">
+
+    <!-- ?------------------ My styles  ----------------------->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>To-Do List Website </title>
+</head>
+
+<body>
+
+    <div class="container mt-4  ">
+        <div class="mb-5 d-flex justify-content-center align-items-center gap-4">
+            <i class="fa-solid fa-pen-to-square clipboard"></i>
+            <h1>To-Do List</h1>
+        </div>
+        <div class="today"></div>
+        <form action="">
+            <div class="row justify-content-center gy-3 text-center">
+                <div class="col-12 col-md-8">
+                    <input type="text" autocomplete="off" id="taskInput" class="form-control" autofocus
+                        placeholder="Please enter your task">
+                </div>
+                <div class="col-12 col-md-2">
+                    <input type="submit" value="Add new" class="btn btn-primary d-block w-100">
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-around pt-5">
+                <h2>Tasks <span id="tasksCounter" class="badge bg-info">0</span></h2>
+                <h2>Finished tasks <span id="finishedCounter" class="badge bg-info">0</span></h2>
+            </div>
+            <div class="col-10 mx-auto pt-4">
+                <ul id="output" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center" id="empty">There is no tasks here</h1>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
