@@ -21,7 +21,7 @@ form.addEventListener("submit", function (ev) {
     ev.preventDefault()
     if (task_input.value === "") {
         alert("You can not add an empty task")
-    } else if (tasks.includes(task_input.value)) {
+    } else if (tasks.find(task => task.content === task_input.value)) {
         alert("you can not add >>" + task_input.value + " << again")
     } else {
         tasks.push({
@@ -54,7 +54,7 @@ function addTasks() {
 }
 
 function counter() {
-    
+
     tasks_counter.innerHTML = output.children.length
 }
 
